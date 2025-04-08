@@ -1,22 +1,27 @@
 # Trotter Simulation with Noisy Circuit
 
 
-![Figure](./figs/advantage.jpg)
+![Figure](./figs/advantage.png)
 <!-- <img src="./figs/idea.png" alt="drawing" width="600"/> -->
 [`Exponentially Decaying Quantum Simulation Error with Noisy Devices`](https://arxiv.org/pdf/2502.xxxxx.pdf).
+Jue Xu*, Chu Zhao*, Junyu Fan, and Qi Zhao, 2025.
 [![https://arxiv.org/abs/xxxx](https://img.shields.io/badge/paper%20%28v1%29-arXiv%3A2504.xxxxx-B31B1B)](https://arxiv.org/abs/2502.xxxxx)
-
-Jue Xu*, Chu Zhao*, Junyu Fan, and Qi Zhao, 2025
 
 
 ## Trotterization with noisy quantum circuit
 ### Problem Setting
-![Figure](./figs/ntc.jpg)
+![Figure](./figs/ntc.png)
+
+### Key phenomena
+`Both physical (noise) error and algorithmic (Trotter) error decay exponentially during evolution`
+![Figure](./figs/error_exp_decay.png)
 
 ### Results
 - [Exponential decay of errors](./error_decay.ipynb)
-- [Phase diagram]
-- [other impacts]
+- [Fitting empirical formula](./empirical_formula.ipynb)
+- [Phase diagram of noisy Trotter error](./phase_diagram.ipynb)
+- [Resource for robust Trotter simulation](./resource.ipynb)
+- Other factors: [initial states](./initial_states.ipynb), [observables](./observables.ipynb), [Hamiltonians](./hamiltonians.ipynb)
 
 <!-- ## Classical simulation -->
 
@@ -34,9 +39,8 @@ Jue Xu*, Chu Zhao*, Junyu Fan, and Qi Zhao, 2025
 ```
 # Create python environment
 conda create --name myenv python=3.10 
-
-# Install requirements
-pip install -r ./code/requirements.txt 
+# Install requirements (windows may have compatibility issues)
+pip install quantum_simulation_recipe
 ```
 
 <!-- ### Requirements
