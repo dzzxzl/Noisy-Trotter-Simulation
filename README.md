@@ -1,26 +1,25 @@
 # Trotter Simulation with Noisy Circuit
 
-
 ![Figure](./figs/advantage.png)
 <!-- <img src="./figs/idea.png" alt="drawing" width="600"/> -->
-[`Exponentially Decaying Quantum Simulation Error with Noisy Devices`](https://arxiv.org/pdf/2502.xxxxx.pdf).
+[`Exponentially Decaying Quantum Simulation Error with Noisy Devices`](https://arxiv.org/pdf/2504.10247.pdf).
 Jue Xu*, Chu Zhao*, Junyu Fan, and Qi Zhao, 2025.
-[![https://arxiv.org/abs/xxxx](https://img.shields.io/badge/paper%20%28v1%29-arXiv%3A2504.xxxxx-B31B1B)](https://arxiv.org/abs/2502.xxxxx)
+[![https://arxiv.org/abs/xxxx](https://img.shields.io/badge/paper%20%28v1%29-arXiv%3A2504.10247-B31B1B)](https://arxiv.org/abs/2504.10247)
 
 
 ## Trotterization with noisy quantum circuit
 ### Problem Setting
 ![Figure](./figs/ntc.png)
 
-### Key phenomena
+### Key phenomenon
 `Both physical (noise) error and algorithmic (Trotter) error decay exponentially during evolution`
 ![Figure](./figs/error_exp_decay.png)
 
 ### Results
 - [Exponential decay of errors](./error_decay.ipynb)
-- [Fitting empirical formula](./empirical_formula.ipynb)
-- [Phase diagram of noisy Trotter error](./phase_diagram.ipynb)
-- [Resource for robust Trotter simulation](./resource.ipynb)
+- [Fitting empirical exponential decay error formula](./empirical_formula.ipynb)
+- [Phase diagram of noisy Trotter error (tradeoff between circuit depth and noise rate)](./phase_diagram.ipynb)
+- [Resource for robust Trotter simulation (circuit depth and physical qubits)](./resource.ipynb)
 - Other factors: [initial states](./initial_states.ipynb), [observables](./observables.ipynb), [Hamiltonians](./hamiltonians.ipynb)
 
 <!-- ## Classical simulation -->
